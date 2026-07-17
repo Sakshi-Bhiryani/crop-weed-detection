@@ -41,21 +41,24 @@ The backend framework and data pipeline are engineered completely with **Python*
 
 
 
-## 📁 Project Repository Geometry Map
+## 📁 Repository Geometry Layout
 
 ```text
-crop_weed_project/
-├── dataset/                  # Split dataset directory
+CROP_WEED_PROJECT/
+├── agri_data/                # Raw unorganized source imagery folder
+├── dataset/                  # Structured dataset directory (split by organize script)
 │   ├── train/                # Training matrix arrays (Images & YOLO Labels)
 │   ├── val/                  # Validation check arrays (Images & YOLO Labels)
 │   └── test/                 # Isolated test evaluation frames (Images & YOLO Labels)
-├── metrics/                  # Statistical performance and logging nodes
-│   ├── results.png           # Loss and precision optimization curves
-│   └── confusion_matrix.png  # Class prediction error tracking layout
+├── metrices/                 # Performance metrics, weight histories, and tracking logs
+│   └── runs/                 # YOLO model training run directories
+├── .gitignore                # System file exclusions manifest
 ├── 1_organize.py             # Data engineering partitioner & dataset split script
-├── utils.py                  # Data augmentation toolkit & coordinate re-calculation system
-├── train_model.py            # Neural network compilation and YOLOv8 training script
 ├── 4_app.py                  # Live interactive Streamlit UI dashboard execution script
-├── best.pt                   # Serialized production-ready neural weights file
+├── best.pt                   # Serialized production-ready custom neural weights file
 ├── data.yaml                 # Core data path configuration mapping schema
-└── requirements.txt          # Absolute environment software dependency manifest
+├── project_summary.txt       # Project overview text layout notes
+├── requirements.txt          # Absolute environment software dependency manifest
+├── train_model.py            # Neural network compilation and YOLOv8 training script
+├── utils.py                  # Data augmentation toolkit & coordinate re-calculation system
+└── yolov8n.pt                # Base pre-trained YOLOv8 Nano weights file
