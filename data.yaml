@@ -1,0 +1,16 @@
+# ==============================================================================
+# YOLO Dataset Configuration - Crop & Weed Object Detection Project
+# ==============================================================================
+
+# Uses the project's root folder as the baseline location
+path: dataset
+train: train/images
+val: val/images
+test: test/images
+
+# ==============================================================================
+# Class Label Definitions
+# ==============================================================================
+names:
+  0: Crop
+  1: Weed

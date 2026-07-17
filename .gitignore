@@ -1,0 +1,15 @@
+# Python cache files
+__pycache__/
+*.pyc
+
+# IDE Configurations
+.vscode/
+
+# Ignore the massive image dataset folders
+dataset/
+agri_data/
+
+# Ignore the large trained model weights and raw training logs
+*.pt
+runs/
+project_summary.txt
