@@ -43,7 +43,7 @@ The backend framework and data pipeline are engineered completely with **Python*
 
 ## 📁 Project Repository Geometry Map
 
-
+```text
 crop_weed_project/
 ├── dataset/                  # Split dataset directory
 │   ├── train/                # Training matrix arrays (Images & YOLO Labels)
